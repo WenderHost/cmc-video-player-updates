@@ -7,7 +7,7 @@ $package_info = getLatestPackage();
 ?>
 <html>
 <head>
-  <title>Updates Server - Test</title>
+  <title>CMC Video Player WordPress Plugin</title>
   <link rel="stylesheet" href="assets/flexboxgrid.min.css" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
@@ -19,15 +19,17 @@ $package_info = getLatestPackage();
     <div class="row">
       <div class="col-md-2"><img src="assets/icon-256x256.jpg" /></div>
       <div class="col-md">
-        <h1 class="plugin-title">Your Plugin</h1>
-        <span class="byline">By a Plugin Developer</span>
+        <h1 class="plugin-title">CMC Video Player</h1>
+        <span class="byline">By <a href="https://mwender.com">Michael Wender</a></span>
       </div>
       <div class="col-md-3 end-md"><?php if( $allow_download ){ ?><a href="<?= $package_info['package']; ?>" class="button">Download</a><?php } ?></div>
     </div>
     <div class="row">
       <div class="col-md-8">
         <h2>Description</h2>
-        <p>Describe your plugin here. Be sure to include any pertinent details. Oftentimes this description is the first thing users will read about your plugin.</p>
+        <p>Implements Cloud Media Company's video player on your WordPress site.</p>
+        <p>This plugin provides an admin screen, found under "Settings > CMC Player", for adding Cloud Media Company's player script. Once you've added the player, you may use the following shortcode to display the player:</p>
+        <p><code>[cmcplayer/]</code> - displays the CMC Player saved in the "CMC Player Script" field below. Available attributes:</p><ul style="list-style-type: disc; margin-left: 2em;"><li><code>show_on_desktop</code> (bool) - Show on desktop? Default: <code>true</code></li><li><code>show_on_mobile</code> (bool) - Show on mobile? Default: <code>true</code></li></ul><p>Example: <code>[cmcplayer show_on_desktop="true" show_on_mobile="false"/]</code></p>
         <h2>Changelog</h2>
         <h3>1.0.0</h3>
         <ul>
