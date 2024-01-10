@@ -30,8 +30,8 @@ $package_info = getLatestPackage();
     <div class="row">
       <div class="col-md-8">
         <h2>Description</h2>
-        <p>Implements Cloud Media Company's video player on your WordPress site.</p>
-        <p>This plugin provides an admin screen, found under "Settings > CMC Player", for adding Cloud Media Company's player script. Once you've added the player, you may use the following shortcode to display the player:</p>
+        <p>Implements Cloud Media Center's video player on your WordPress site.</p>
+        <p>This plugin provides an admin screen, found under "Settings > CMC Player", for adding Cloud Media Center's player script. Once you've added the player, you may use the following shortcode to display the player:</p>
         <p><code>[cmcplayer/]</code> - displays the CMC Player saved in the "CMC Player Script" field below. Available attributes:</p><ul style="list-style-type: disc; margin-left: 2em;"><li><code>show_on_desktop</code> (bool) - Show on desktop? Default: <code>true</code></li><li><code>show_on_mobile</code> (bool) - Show on mobile? Default: <code>true</code></li></ul><p>Example: <code>[cmcplayer show_on_desktop="true" show_on_mobile="false"/]</code></p>
         <h2>Changelog</h2>
         <h3>1.0.0</h3>
@@ -53,6 +53,6 @@ $package_info = getLatestPackage();
       </div>
     </div>
   </div>
-  <div class="footer">&copy; <?= date('Y') ?>. All rights reserved.</div>
+  <div class="footer">&copy; <?= date('Y') ?> Cloud Media Center. All rights reserved.</div>
 </body>
 </html>
